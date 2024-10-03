@@ -10,7 +10,7 @@ body {
     background-color: #0d0f11;
 }
 
-.container {
+#login-page {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -34,8 +34,9 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #191d23;
-    border-radius: 7px;
+    border-radius: 8px;
     padding: 50px 3px;
+    border: 3px solid #7b57e02a;
 }
 
 .login-container p {
@@ -60,4 +61,118 @@ body {
     font-size: 14px;
     background-color: #7b57e0;
     border-radius: 7px;
+    color: white;
+
+}
+
+#user-dashboard {
+    display: none;
+}
+
+.clr-yellow {
+    background-color: #efb047;
+}
+
+.clr-blue {
+    background-color: #5395cf;
+}
+
+.clr-green {
+    background-color: #50c099;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    text-align: center;
+    color: white;
+    margin: 70px 0px 30px 0px;
+}
+
+.upper-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balances {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.balance-card {
+    border-radius: 7px;
+    margin: 0px 25px;
+    padding: 10px 20px;
+    height: 100px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.balance-card h2 {
+    font-size: 40px;
+}
+
+.lower-section {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.transition-cards {
+
+    display: flex;
+    flex-direction: row;flex-wrap: wrap;
+}
+
+.transition-card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-color: #191d23;
+    padding: 20px 30px 30px 30px;
+    border-radius: 7px;
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    border: 3px solid #7b57e02a;
+}
+
+.transition-card h2 {
+    font-size: ;
+}
+
+
+.transition-card button {
+    margin-top: 40px;
+    padding: 4px 32px;
+    font-size: 14px;
+    background-color: #7b57e0;
+    border-radius: 7px;
+    color: white;
+    width: max-content;
+}
+
+.transition-card input {
+    margin: 20px 0px;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 4px 15px;
+    border: none;
+    font-weight: bold;
+
+}
+.transition-card input::placeholder{
+    font-weight: normal;
 }

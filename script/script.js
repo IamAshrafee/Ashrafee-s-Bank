@@ -1,0 +1,30 @@
+// Login page
+
+const loginBtn = document.getElementById("login");
+loginBtn.addEventListener("click", function () {
+  const loginPageHide = document.getElementById("login-page");
+  loginPageHide.style.display = "none";
+  document.getElementById("user-dashboard").style.display = "block";
+});
+
+// User Dashboard
+
+// Deposit
+
+const depositBtn = document.getElementById("deposit-btn");
+depositBtn.addEventListener("click", function () {
+  const depositAmount = document.getElementById("deposit-amount").value;
+  const depositNumber = parseFloat(depositAmount);
+
+  const currentDeposit = document.getElementById("current-deposit").innerText;
+  const currentDepositNumber = parseFloat(currentDeposit);
+  const totalDeposit = currentDepositNumber + depositNumber;
+
+  document.getElementById("current-deposit").innerText = totalDeposit;
+
+  const currentBalance = document.getElementById("current-balance").innerText;
+  const currentBalanceNumber = parseFloat(currentBalance);
+  const totalBalance = currentBalanceNumber + depositNumber;
+
+  document.getElementById("current-balance").innerText = totalBalance;
+});
