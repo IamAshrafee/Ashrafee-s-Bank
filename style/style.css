@@ -24,6 +24,7 @@ body {
     margin-bottom: 35px;
     font-size: 37px;
     color: white;
+    
 
 
 }
@@ -35,7 +36,7 @@ body {
     flex-direction: column;
     background-color: #191d23;
     border-radius: 8px;
-    padding: 50px 3px;
+    padding: 30px 3px 50px 3px;
     border: 3px solid #7b57e02a;
 }
 
@@ -86,11 +87,7 @@ body {
     flex-direction: column;
 }
 
-.container h1 {
-    text-align: center;
-    color: white;
-    margin: 70px 0px 30px 0px;
-}
+
 
 .upper-section {
     display: flex;
@@ -112,7 +109,7 @@ body {
     margin: 0px 25px;
     padding: 10px 20px;
     height: 100px;
-    width: 150px;
+    width: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,4 +172,18 @@ body {
 }
 .transition-card input::placeholder{
     font-weight: normal;
+}
+
+.dashboard-title{
+    text-align: center;
+    color: white;
+    margin: 70px 0px 55px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-title h1{
+    width: 415px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #7b57e0;
 }
