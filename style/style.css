@@ -97,6 +97,7 @@ body {
 
 #user-dashboard-page {
     height: 100vh;
+    display: none;
 }
 
 .dashboard-page-container {
