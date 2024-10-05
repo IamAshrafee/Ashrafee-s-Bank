@@ -4,67 +4,82 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins';
+    box-sizing: border-box;
 }
 
 body {
     background-color: #0d0f11;
 }
 
-#login-page {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+/* Login page CSS */
 
-.title {}
+#login-page{
+    height: 100vh;
+    color: white;
+}
+.login-page-container{
+    height: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 0px 20px;
+}
+.title{
+    text-align: center;
+   
+}
 
 .title h1 {
-    margin-bottom: 35px;
-    font-size: 37px;
-    color: white;
-    
-
-
+    font-size: 35px;
 }
-
-.login-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.login-form{
     background-color: #191d23;
-    border-radius: 8px;
-    padding: 30px 3px 50px 3px;
     border: 3px solid #7b57e02a;
+    padding: 30px 45px 35px 45px;
+    display: flex;
+    border-radius: 7px;
+    flex-direction: column;
+    margin: 0px auto;
+    max-width: 410px;
+    height: 320px;
 }
-
-.login-container p {
-    color: white;
-    margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.login-container input {
-    margin: 5px 50px;
+.login-container input{
+    margin: 5px 0px;
     border-radius: 7px;
     font-size: 16px;
-    padding: 4px 15px;
-    width: 260px;
+    padding: 6px 16px;
     border: none;
 }
 
-.login-container button {
-    margin-top: 50px;
+.login-container a{
+    text-align: center;
+    margin-top: 07px;
+    color: #7b57e07e ;
+}
+
+.login-container p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.login-container button{
     padding: 4px 32px;
     font-size: 14px;
     background-color: #7b57e0;
     border-radius: 7px;
     color: white;
-
+    max-width: 120px;
+    margin: auto auto 0px auto;
 }
+
+@media (max-width: 430px) {
+    .login-form {
+        padding: 30px 25px 35px 25px;
+}}
 
 #user-dashboard {
     display: none;
@@ -147,7 +162,6 @@ body {
 }
 
 .transition-card h2 {
-    font-size: ;
 }
 
 

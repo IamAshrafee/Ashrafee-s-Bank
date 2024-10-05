@@ -6,7 +6,7 @@ Hey friends this a silly project where I practiced my javascript skill for the f
  To see the live site, Click **[Here](https://iamashrafee.github.io/Ashrafee-s-Bank/)**
 
 If this project got your heart, please give a star in this repo ⭐⭐
-## Project explaination
+## Project explanation
 
 When you open my [project](https://iamashrafee.github.io/Ashrafee-s-Bank/), you'll first see a login page—no need for correct credentials, just press enter to access the user dashboard.
 
