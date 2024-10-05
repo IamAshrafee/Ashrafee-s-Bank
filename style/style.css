@@ -13,11 +13,12 @@ body {
 
 /* Login page CSS */
 
-#login-page{
+#login-page {
     height: 100vh;
     color: white;
 }
-.login-page-container{
+
+.login-page-container {
     height: 100%;
     max-width: 580px;
     margin: 0 auto;
@@ -27,15 +28,17 @@ body {
     row-gap: 20px;
     padding: 0px 20px;
 }
-.title{
+
+.title {
     text-align: center;
-   
+
 }
 
 .title h1 {
     font-size: 35px;
 }
-.login-form{
+
+.login-form {
     background-color: #191d23;
     border: 3px solid #7b57e02a;
     padding: 30px 45px 35px 45px;
@@ -46,7 +49,8 @@ body {
     max-width: 410px;
     height: 320px;
 }
-.login-container input{
+
+.login-container input {
     margin: 5px 0px;
     border-radius: 7px;
     font-size: 16px;
@@ -54,19 +58,25 @@ body {
     border: none;
 }
 
-.login-container a{
+.login-container a {
     text-align: center;
     margin-top: 07px;
-    color: #7b57e07e ;
+    color: #7b57e07e;
 }
 
-.login-container p{
+.login-container a:hover {
+    color: #7b57e0;
+    transition: ease-in 0.3s, ease-out 0.3s;
+}
+
+.login-container p {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 20px;
 }
-.login-container button{
+
+.login-container button {
     padding: 4px 32px;
     font-size: 14px;
     background-color: #7b57e0;
@@ -79,10 +89,63 @@ body {
 @media (max-width: 430px) {
     .login-form {
         padding: 30px 25px 35px 25px;
-}}
+    }
+}
 
-#user-dashboard {
-    display: none;
+
+/* Account dashboard CSS */
+
+#user-dashboard-page {
+    height: 100vh;
+}
+
+.dashboard-page-container {
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px 20px;
+}
+
+.dashboard-title {
+    text-align: center;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.dashboard-title h1 {
+    width: max-content;
+    padding: 0px 20px 5px;
+    border-bottom: 1px solid #7b57e0a9;
+    margin-bottom: 6px;
+}
+
+
+.balances {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.balance-card {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px 20px 2px 15px;
+    border-radius: 7px;
+    flex: 1 260px;
+
+}
+
+.balance-card h2 {
+    font-size: 40px;
 }
 
 .clr-yellow {
@@ -97,107 +160,82 @@ body {
     background-color: #50c099;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.upper-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.balances {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
-.balance-card {
-    border-radius: 7px;
-    margin: 0px 25px;
-    padding: 10px 20px;
-    height: 100px;
-    width: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-}
-
-.balance-card h2 {
-    font-size: 40px;
-}
-
 .lower-section {
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .transition-cards {
-
     display: flex;
-    flex-direction: row;flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-top: 30px;
 }
 
 .transition-card {
+    height: max-content;
     display: flex;
-    flex-direction: column;
-    margin: 50px;
-    background-color: #191d23;
-    padding: 20px 30px 30px 30px;
-    border-radius: 7px;
-    height: 200px;
-    width: 400px;
     justify-content: center;
+    flex-direction: column;
+    padding: 15px 30px 30px 30px;
+    border-radius: 7px;
+    flex: 1 300px;
+    background-color: #191d23;
     border: 3px solid #7b57e02a;
 }
 
-.transition-card h2 {
+.transition-card input {
+    margin: 17px 0px 57px;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 5px 16px;
+    border: none;
+    font-weight: bold;
 }
 
-
 .transition-card button {
-    margin-top: 40px;
     padding: 4px 32px;
     font-size: 14px;
     background-color: #7b57e0;
     border-radius: 7px;
     color: white;
-    width: max-content;
-}
-
-.transition-card input {
-    margin: 20px 0px;
-    border-radius: 7px;
-    font-size: 16px;
-    padding: 4px 15px;
-    border: none;
-    font-weight: bold;
-
+    max-width: 120px;
 }
 .transition-card input::placeholder{
     font-weight: normal;
 }
 
-.dashboard-title{
-    text-align: center;
-    color: white;
-    margin: 70px 0px 55px 0px;
-    display: flex;
-    justify-content: center;
+@media (max-width: 430px) {
+    .dashboard-title h1 {
+        font-size: 28px;
+    }
+    .transition-card input {
+        margin: 17px 0px 30px;
+    }
+    .transition-card h2 {
+        font-size: 20px;
+    }
+    .transition-card{
+    padding: 15px 15px 15px;
+    }
+    .balance-card h2 {
+        font-size: 35px;
+    }
 }
 
-.dashboard-title h1{
-    width: 415px;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #7b57e0;
-}
+/* Footer */
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto ;
+    padding-bottom: 30px;
+  
+  }
+
+  .footer-container p {
+    color: #ffffffb9;
+   }
